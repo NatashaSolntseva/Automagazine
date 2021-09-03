@@ -1,0 +1,2 @@
+# Automagazine
+Учебный проект YandexПрактикум
