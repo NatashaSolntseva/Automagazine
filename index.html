@@ -1,34 +1,129 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Все об автомобилях" />
+  <meta name="author" content="Наташа Солнцева" />
+  <title>Auto-magazine</title>
+  <!-- <link rel="icon" href="./images/favicon.png" type="image/png"> -->
+  <link rel="stylesheet" href="./styles/style.css" />
 </head>
 <body class="page">
- <!--Шапка сайта-->
- <header class="header page__section">
-
- </header>
- <!--Основное содержимое страницы-->
- <main class="content">
-   <section class="intro page__section">
-
-   </section>
-   <section class="about page__section">
-
-   </section>
-   <section class="gallery page__section">
-
-   </section>
-   <section class="press page__section">
-
-   </section>
- </main>
- <!--подвал сайта-->
- <footer class="footer page__section">
-
- </footer>
+  <!--Шапка сайта-->
+  <header class="header page__section page__section_place_header">
+    <nav class="header__nav">
+      <ul class="header__nav-list page-list">
+        <li class="header__nav-item">
+          <a href="#" class="header__link page-link"><span class="span-accent_uppercase">Факты</span></a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="header__link page-link"><span class="span-accent_uppercase">Галерея</span></a>
+        </li>
+        <li class="header__nav-item">
+          <a href="#" class="header__link page-link"><span class="span-accent_uppercase">Пресса</span></a>
+        </li>
+      </ul>
+    </nav>
+    <div class="logo logo_place_header"></div>
+    <div class="header__burger">
+      <span></span>
+    </div>
+  </header>
+  <!--------------------------------------------------------------Основное содержимое страницы-->
+  <main class="content">
+  <!------------------------------------------------------------- Секция Intro -->
+    <section class="intro page__section page__section_place_intro">
+      <div class="intro__text-wrapper">
+        <h1 class="page-text intro__title"><span class="span-accent_uppercase">volkswagen T1</span></h1>
+        <h2 class="page-text intro__subtitle">Новая версия популярного микроавтобуса</h2>
+        <p class="page-text intro__text"><span class="span-accent_uppercase">С электро двигателем</span></p>
+        <a href="#" class="intro__link page-link"><span class="span-accent_uppercase">Подробнее</span></a>
+      </div>
+      <div class="intro__background"></div>
+    </section>
+    <!--------------------------------------------------------- Секция About -->
+    <section class="about page__section">
+      <div class="about__card">
+        <p class="page-text about__text">
+          <span class="span-accent_bold">VW T1 Electro:</span> Отделение Volkswagen Commercial Vehicles представило концепт e-Bulli: классический вэн T1 1966 года с&nbsp;электрической силовой установкой. По&nbsp;словам производителя, проект получит
+          коммерческое продолжение, и&nbsp;через фирму-партнера eClassics наборы для конверсии микроавтобусов в&nbsp;электрокары и&nbsp;уже готовые машины будут продавать частным клиентам.
+        </p>
+      </div>
+      <div class="about__card">
+        <h2 class="page-text about__title"><span class="span-accent_uppercase">Плюсы</span></h2>
+        <ul class="page-list about__list">
+          <li class="about__list-item about__list-item_type_advantages">Экологичный</li>
+          <li class="about__list-item about__list-item_type_advantages">Экономный</li>
+          <li class="about__list-item about__list-item_type_advantages">Тихий</li>
+        </ul>
+      </div>
+      <div class="about__card">
+        <h2 class="page-text about__title"><span class="span-accent_uppercase">Минусы</span></h2>
+        <ul class="page-list about__list">
+          <li class="about__list-item about__list-item_type_disadvantages">Дорогой</li>
+          <li class="about__list-item about__list-item_type_disadvantages">Подзарядка</li>
+        </ul>
+      </div>
+    </section>
+    <!----------------------------------------------------------Секция Галерея -->
+    <section class="gallery page__section">
+      <div class="gallery__block">
+        <img src="./images/gallery/bus_on_road.jpg" alt="Фото автобуса" class="gallery__photo-item"/>
+        <div class="gallery__nav-wrapper">
+          <p class="page-text gallery__text">Галерея</p>
+          <div class="gallery__nav-arrow gallery__nav-arrow_type_left"></div>
+          <div class="gallery__nav-arrow gallery__nav-arrow_type_right"></div>
+        </div>
+      </div>
+    </section>
+    <!--------------------------------------------------------------- Секция Пресса -->
+    <section class="press page__section">
+      <div class="press__block">
+        <p class="page-text press__title">Пресса</p>
+      </div>
+      <div class="press__block">
+        <p class="page-text press__text">
+          <span class="span-accent_bold">Engadget:</span>
+          VW’s e-BULLI concept shows how your classic van can become an EV.
+        </p>
+        <div class="press__nav-wrapper">
+          <ul class="page-list press__nav-dots">
+            <li class="press__dot press__dot_active"></li>
+            <li class="press__dot"></li>
+          </ul>
+          <a href="#" class="page-link press__link">Читать</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!--подвал сайта-->
+  <footer class="footer page__section">
+    <div class="footer__block">
+      <h2 class="page-text footer__title">Подписка</h2>
+      <p class="page-text footer__text">На новые спецвыпуски машин.</p>
+      <div class="form">
+        <form class="form__area">
+          <div class="form__input-wrapper">
+            <input type="text" name="username" placeholder="Имя" class="form__input form__input_type_name" required="">
+          </div>
+          <div class="form__input-wrapper">
+            <input type="text" name="usersurname" placeholder="Фамилия" class="form__input form__input_type_surname" required="">
+          </div>
+          <div class="form__input-wrapper">
+            <input type="text" name="useremail" placeholder="Почта" class="form__input form__input_type_email" required="">
+          </div>
+          <div class="form__input-wrapper">
+            <button type="submit" aria-label="Кнопка подписаться" class="form__subscribe-button"><span class="span-accent_uppercase">Подписка</span></button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="footer__block">
+      <div class="logo logo_place_footer"></div>
+      <p class="page-text footer__copyright">&copy; Auto-Magazine 2021</p>
+    </div>
+  </footer>
 </body>
 </html>

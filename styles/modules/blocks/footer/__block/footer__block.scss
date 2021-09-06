@@ -1,0 +1,11 @@
+.footer__block {
+  width: 50%;
+  border-right: $borderStyle;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+.footer__block:last-of-type {
+  border:none;
+}

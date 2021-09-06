@@ -1,0 +1,7 @@
+.form__area {
+  display: grid;
+  grid-template-rows: min-content min-content;
+  grid-template-columns: 170px 170px;
+  border-bottom: $borderStyle;
+  border-right: $borderStyle;
+}

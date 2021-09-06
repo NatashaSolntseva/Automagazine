@@ -1,0 +1,7 @@
+.about__card {
+  border-right: $borderStyle;
+}
+
+.about__card:last-of-type {
+  border-right: none;
+}

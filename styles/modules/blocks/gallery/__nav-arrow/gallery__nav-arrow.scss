@@ -1,0 +1,13 @@
+.gallery__nav-arrow {
+  width: 42px;
+  height: 34px;
+  background-image: url(../images/nav/arrow.svg);
+  background-repeat: no-repeat;
+  transition: all 0.2s;
+  cursor: pointer;
+  align-self: center;
+}
+
+.gallery__nav-arrow:hover {
+  opacity: 70%;
+}

@@ -1,0 +1,19 @@
+.form__subscribe-button {
+  width: 80px;
+  height: 32px;
+  border:none;
+  padding: 0px;
+  margin: 0px;
+  cursor: pointer;
+  background-color: $backgroundHoverColor;
+  color: $textHoverColor;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  letter-spacing: 1px;  
+  /*grid-row: 2/3;
+  grid-column: 2/3;
+  align-self: end;
+  justify-self: end;*/
+  align-self: end;
+}

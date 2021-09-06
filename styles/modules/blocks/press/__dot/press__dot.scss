@@ -1,0 +1,12 @@
+.press__dot {
+  width: 12px;
+  height: 12px;
+  box-sizing: border-box;
+  border: 1px solid #E1FD2C;
+  border-radius: 50%;  
+  margin-right: 14px;
+}
+
+.press__dot:last-child {
+  margin: 0;
+}
