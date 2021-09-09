@@ -5,3 +5,13 @@
 .about__card:last-of-type {
   border-right: none;
 }
+
+@media screen and (max-width: 320px) {
+  .about__card {
+    border-bottom: $borderStyle;
+  }
+}
+
+.about__card:last-of-type {
+  border-bottom: none;
+}

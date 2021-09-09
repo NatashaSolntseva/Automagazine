@@ -5,3 +5,11 @@
   padding-bottom: 51px;
   text-align: center;
 }
+
+@media screen and (max-width: 320px) {
+  .intro__subtitle {
+    font-size: 38px;
+    line-height: 50px;
+    padding-bottom: 30px;
+  }
+}

@@ -4,3 +4,11 @@
   line-height: 46px;
   padding-left: 50px;
 }
+
+@media screen and (max-width: 560px) {
+  .gallery__text {
+    font-size: 26px;
+    line-height: 26px;
+    padding-left: 20px;
+  }
+}

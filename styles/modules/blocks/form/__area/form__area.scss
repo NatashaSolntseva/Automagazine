@@ -5,3 +5,9 @@
   border-bottom: $borderStyle;
   border-right: $borderStyle;
 }
+
+@media screen and (max-width: 699px) {
+  .form__area {
+    grid-template-columns: 140px 140px;     
+  }
+}

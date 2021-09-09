@@ -21,3 +21,10 @@
   color: $textHoverColor;
   cursor: pointer;
 }
+
+@media screen and (max-width: 320px) {
+  .intro__link {
+    width: 280px;    
+    align-self: center;
+  }
+}

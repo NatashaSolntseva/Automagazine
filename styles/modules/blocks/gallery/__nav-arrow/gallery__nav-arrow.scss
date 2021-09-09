@@ -11,3 +11,11 @@
 .gallery__nav-arrow:hover {
   opacity: 70%;
 }
+
+@media screen and (max-width: 560px) {
+  .gallery__nav-arrow {
+    width: 24px;
+    height: 20px;
+    background-image: url(../images/nav/arrow_small.svg);
+  }
+}

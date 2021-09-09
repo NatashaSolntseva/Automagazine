@@ -13,15 +13,18 @@
 @import "./modules/blocks/logo/logo.scss";
 @import "./modules/blocks/logo/_place/logo_place_header.scss";
 @import "./modules/blocks/logo/_place/logo_place_footer.scss";
+@import "./modules/blocks/logo/_visibility/logo_visibility_none.scss";
 @import "./modules/blocks/span-accent/_bold/span-accent_bold.scss";
 @import "./modules/blocks/span-accent/_uppercase/span-accent_uppercase.scss";
 /*стили для шапки сайта*/
 @import "./modules/blocks/header/header.scss";
 @import "./modules/blocks/header/__burger/header__burger.scss";
+@import "./modules/blocks/header/__burger/_active/header__burger_active.scss";
 @import "./modules/blocks/header/__link/header__link.scss";
 @import "./modules/blocks/header/__nav-item/header__nav-item.scss";
 @import "./modules/blocks/header/__nav-list/header__nav-list.scss";
 @import "./modules/blocks/header/__nav/header__nav.scss";
+@import "./modules/blocks/header/__nav/_visibility/header__nav_visibility_none.scss";
 /*стили для секций сайта*/
 @import "./modules/blocks/intro/intro.scss";
 @import "./modules/blocks/intro/__text-wrapper/intro__text-wrapper.scss";

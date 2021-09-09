@@ -8,13 +8,14 @@
   <meta name="author" content="Наташа Солнцева" />
   <title>Auto-magazine</title>
   <!-- <link rel="icon" href="./images/favicon.png" type="image/png"> -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
   <link rel="stylesheet" href="./styles/style.css" />
 </head>
 <body class="page">
   <!--Шапка сайта-->
   <header class="header page__section page__section_place_header">
-    <nav class="header__nav">
-      <ul class="header__nav-list page-list">
+    <nav class="header__nav ">
+      <ul class="header__nav-list page-list header__nav_visibility_none">
         <li class="header__nav-item">
           <a href="#" class="header__link page-link"><span class="span-accent_uppercase">Факты</span></a>
         </li>
@@ -43,15 +44,14 @@
       <img src="./images/intro/volkswagen.jpg" alt="Фото автобуса" class="intro__photo"/>      
       <a href="#" class="intro__link page-link"><span class="span-accent_uppercase">Подробнее</span></a>
     </section>
-
     <!--------------------------------------------------------- Секция About -->
     <section class="about page__section">
       <div class="about__card">
         <p class="page-text about__text">
           <span class="span-accent_bold">VW T1 Electro:</span> Отделение Volkswagen Commercial Vehicles представило концепт e&#8209;Bulli:
-           классический вэн T1 1966 года с&nbsp;электрической силовой установкой. По&nbsp;словам производителя, проект получит
+          классический вэн T1 1966 года с&nbsp;электрической силовой установкой. По&nbsp;словам производителя, проект получит
           коммерческое продолжение, и&nbsp;через фирму&#8209;партнера eClassics наборы для конверсии микроавтобусов в&nbsp;электрокары
-           и&nbsp;уже готовые машины будут продавать частным клиентам.
+          и&nbsp;уже готовые машины будут продавать частным клиентам.
         </p>
       </div>
       <div class="about__card">
@@ -71,16 +71,50 @@
       </div>
     </section>
     <!----------------------------------------------------------Секция Галерея -->
-    <section class="gallery page__section">
+    <section class="gallery page__section">   
+      <!--контейнер для слайдра-->   
       <div class="gallery__block">
-        <img src="./images/gallery/bus_on_road.jpg" alt="Фото автобуса" class="gallery__photo-item"/>
+        <!--Обязательная оболочка слайдера-->
+        <div class="swiper-wrapper">
+          <!--слайд-->          
+          <img src="./images/gallery/bus_on_road.jpg" alt="Фото автобуса" class="swiper-slide gallery__photo-item"/>         
+          <!--слайд-->          
+          <img src="./images/gallery/bus_inside1.jpg" alt="Фото автобуса" class="swiper-slide gallery__photo-item"/>         
+          <!--слайд-->          
+          <img src="./images/gallery/bus_inside.jpg" alt="Фото автобуса" class="swiper-slide gallery__photo-item"/>          
+        </div>
+         <!--Навигация слайдера-->
         <div class="gallery__nav-wrapper">
           <p class="page-text gallery__text">Галерея</p>
           <div class="gallery__nav-arrow gallery__nav-arrow_type_left"></div>
-          <div class="gallery__nav-arrow gallery__nav-arrow_type_right"></div>
+          <div class="gallery__nav-arrow gallery__nav-arrow_type_right"></div>      
         </div>
-      </div>
+      </div>   
     </section>
+<!--
+     Slider main container 
+<div class="swiper">
+  Additional required wrapper 
+  <div class="swiper-wrapper">
+   Slides 
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+    ...
+  </div>
+   If we need pagination 
+  <div class="swiper-pagination"></div>
+
+   If we need navigation buttons 
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+   If we need scrollbar 
+  <div class="swiper-scrollbar"></div>
+</div>
+-->
+
+
     <!--------------------------------------------------------------- Секция Пресса -->
     <section class="press page__section">
       <div class="press__block">
@@ -96,7 +130,7 @@
             <li class="press__dot press__dot_active"></li>
             <li class="press__dot"></li>
           </ul>
-          <a href="#" class="page-link press__link">Читать</a>
+          <a href="https://www.engadget.com/2020-03-20-vw-unveils-e-bulli-t1-electric-conversion.html" target="_blank" class="page-link press__link">Читать</a>
         </div>
       </div>
     </section>
@@ -115,10 +149,10 @@
             <input type="text" name="usersurname" placeholder="Фамилия" class="form__input form__input_type_surname" required="">
           </div>
           <div class="form__input-wrapper">
-            <input type="text" name="useremail" placeholder="Почта" class="form__input form__input_type_email" required="">
+            <input type="email" name="useremail" placeholder="Почта" class="form__input form__input_type_email" required="">
           </div>
           <div class="form__input-wrapper">
-            <button type="submit" aria-label="Кнопка подписаться" class="form__subscribe-button"><span class="span-accent_uppercase">Подписка</span></button>
+            <button type="submit" aria-label="Кнопка подписаться" class="form__subscribe-button">Подписка</button>
           </div>
         </form>
       </div>
@@ -128,5 +162,7 @@
       <p class="page-text footer__copyright">&copy; Auto-Magazine 2021</p>
     </div>
   </footer>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>
