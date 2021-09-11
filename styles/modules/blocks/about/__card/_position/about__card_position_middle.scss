@@ -1,0 +1,16 @@
+.about__card_position_middle {
+  
+}
+
+@media screen and (max-width: 768px) {
+  .about__card_position_middle { 
+    min-height: 506px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .about__card_position_middle { 
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+}

@@ -46,7 +46,7 @@
     </section>
     <!--------------------------------------------------------- Секция About -->
     <section class="about page__section">
-      <div class="about__card">
+      <div class="about__card about__card_position_top">
         <p class="page-text about__text">
           <span class="span-accent_bold">VW T1 Electro:</span> Отделение Volkswagen Commercial Vehicles представило концепт e&#8209;Bulli:
           классический вэн T1 1966 года с&nbsp;электрической силовой установкой. По&nbsp;словам производителя, проект получит
@@ -54,7 +54,7 @@
           и&nbsp;уже готовые машины будут продавать частным клиентам.
         </p>
       </div>
-      <div class="about__card">
+      <div class="about__card about__card_position_moddle">
         <h2 class="page-text about__title"><span class="span-accent_uppercase">Плюсы</span></h2>
         <ul class="page-list about__list">
           <li class="about__list-item about__list-item_type_advantages">Экологичный</li>
@@ -62,7 +62,7 @@
           <li class="about__list-item about__list-item_type_advantages">Тихий</li>
         </ul>
       </div>
-      <div class="about__card">
+      <div class="about__card about__card_position_bottom">
         <h2 class="page-text about__title"><span class="span-accent_uppercase">Минусы</span></h2>
         <ul class="page-list about__list">
           <li class="about__list-item about__list-item_type_disadvantages">Дорогой</li>
@@ -91,48 +91,23 @@
         </div>
       </div>   
     </section>
-<!--
-     Slider main container 
-<div class="swiper">
-  Additional required wrapper 
-  <div class="swiper-wrapper">
-   Slides 
-    <div class="swiper-slide">Slide 1</div>
-    <div class="swiper-slide">Slide 2</div>
-    <div class="swiper-slide">Slide 3</div>
-    ...
-  </div>
-   If we need pagination 
-  <div class="swiper-pagination"></div>
-
-   If we need navigation buttons 
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-
-   If we need scrollbar 
-  <div class="swiper-scrollbar"></div>
-</div>
--->
-
-
     <!--------------------------------------------------------------- Секция Пресса -->
     <section class="press page__section">
-      <div class="press__block">
+      <!--исчезающий на адаптиве блок-->
+      <div class="press__desktop-block">
         <p class="page-text press__title">Пресса</p>
       </div>
-      <div class="press__block">
-        <p class="page-text press__text">
-          <span class="span-accent_bold">Engadget:</span>
-          VW’s e-BULLI concept shows how your classic van can become an EV.
-        </p>
-        <div class="press__nav-wrapper">
-          <ul class="page-list press__nav-dots">
-            <li class="press__dot press__dot_active"></li>
-            <li class="press__dot"></li>
-          </ul>
-          <a href="https://www.engadget.com/2020-03-20-vw-unveils-e-bulli-t1-electric-conversion.html" target="_blank" class="page-link press__link">Читать</a>
+      <!--свайпер-->
+      <div class="press__swiper">
+        <!--Обязательная оболочка слайдера-->
+        <div class="press__swiper-wrapper swiper-wrapper">
+          <div class="press__swiper-slide swiper-slide"><p class="page-text press__text"><span class="span-accent_bold">Engadget:</span>VW’s e-BULLI concept shows how your classic van can become an EV.</p></div>
+          <div class="press__swiper-slide swiper-slide"><p class="page-text press__text"><span class="span-accent_bold">Drive.ru:</span>Вэн Volkswagen e-Bulli скрестил классику с современной техникой.</p></div>        
         </div>
-      </div>
+        <!--Пагинация слайдера-->
+        <div class="press__nav-wrapper"></div>        
+        <a href="https://www.engadget.com/2020-03-20-vw-unveils-e-bulli-t1-electric-conversion.html" target="_blank" class="page-link press__link">Читать</a>
+      </div>      
     </section>
   </main>
   <!--подвал сайта-->

@@ -12,19 +12,39 @@
   box-sizing: border-box;
   border: $borderStyle;
   width: 360px;
-  height: 64px;
-  transition: all 0.5s;
+  height: 64px;  
+  position: relative;
+  overflow: hidden;  
 }
 
-.intro__link:hover {
-  background-color: $backgroundHoverColor;
+.intro__link:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: $backgroundHoverColor;  
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transform-origin: bottom left;
+  transform: rotate(-90deg);
+  transition: transform 0.3s;
+}
+.intro__link:hover, .intro__link:hover:before {
+  transform: rotate(0deg);
   color: $textHoverColor;
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .intro__link {
+    width: 240px;    
+    align-self: center;
+  }
 }
 
 @media screen and (max-width: 320px) {
   .intro__link {
     width: 280px;    
-    align-self: center;
   }
 }

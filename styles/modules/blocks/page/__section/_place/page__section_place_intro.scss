@@ -2,6 +2,12 @@
   padding: 150px 0px 150px 0px;  
 }
 
+@media screen and (max-width: 768px) {
+  .page__section_place_intro {
+    padding: 0px 0px 102px 0px;  
+  }
+}
+
 @media screen and (max-width: 320px) {
   .page__section_place_intro {
     padding: 0px 0px 62px 0px;  

@@ -9,3 +9,9 @@
     margin-left: 16px;
   }
 }
+
+@media screen and (max-width: 320px) {
+  .gallery__nav-arrow_type_right {
+    margin-right: 0px;
+  }
+}

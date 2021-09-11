@@ -1,4 +1,7 @@
 .press__link {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  justify-self: end;
   display: flex;
   align-items: center; 
   justify-content: center;
@@ -12,10 +15,35 @@
   line-height: 28px;
   transition: all 0.5s;
   margin: 0px 50px 50px 0px;
+  position: relative;
+  overflow: hidden;  
 }
 
-.press__link:hover {
-  background-color: $backgroundHoverColor;
+.press__link:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: $backgroundHoverColor;  
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transform-origin: bottom left;
+  transform: rotate(-90deg);
+  transition: transform 0.3s;
+}
+.press__link:hover, .press__link:hover:before {
+  transform: rotate(0deg);
   color: $textHoverColor;
   cursor: pointer;
+}
+
+
+@media screen and (max-width: 320px) {
+  .press__link {
+    width: 88px;
+    height: 42px;
+    font-size: 14px;    
+    margin: 0px 20px 20px 0px;
+  }
 }

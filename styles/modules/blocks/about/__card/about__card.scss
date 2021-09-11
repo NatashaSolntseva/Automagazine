@@ -8,6 +8,7 @@
 
 @media screen and (max-width: 320px) {
   .about__card {
+    border-right: none;
     border-bottom: $borderStyle;
   }
 }

@@ -27,11 +27,8 @@ form.addEventListener("submit", (evt) => {
 
 //инициализаци Swiper для секции Галерея
 const swiperGallery = new Swiper('.gallery__block', {
- /*// не работает???
-  slidesPerView: 1,
-  
-  slidesPerGroup: 1,
-  // Кол-во пролистываемых слайдов*/
+
+  // Кол-во пролистываемых слайдов - из демо примеров в документации
   cssMode: true,
   // бесконечный цикл
   loop: true, 
@@ -45,108 +42,15 @@ const swiperGallery = new Swiper('.gallery__block', {
 
 });
 
+const swiperPress = new Swiper(".press__swiper", {
 
-/*
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'vertical',
-  loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
-});
-*/
-
-
-/*
-const swiperReviews = new Swiper('.reviews__container', {
-  // Инициализируем Swiper для блока Reviews
-  wrapperClass: 'reviews__wrapper',
-  slideClass: 'reviews__slide',
-  slideActiveClass: 'reviews__slide_type_active',
-
-  spaceBetween: 50,
-  // Отступ между слайдами
-
-  slidesPerView: 1,
-  // Кол-во отображаемых слайдов
-
-  slidesPerGroup: 1,
-  // Кол-во пролистываемых слайдов
-
-  // Листать стрелками бесконечно
-  loop: true,
-
-  // autoplay: {
-  // Автопрокрутка
-  //   // Пауза между прокруткой
-  //   delay: 3000,
-  //   disableOnIteraction: true
-  // },
-
+  cssMode: true,
   speed: 1000,
-  // Скорость переключения
-
-  centeredSlides: true,
-  // Активный слайд по центру
-
-  initialSlide: 0,
-  // Индекс активного слайда
-
-  navigation: {
-    // Стрелки
-    nextEl: '.reviews__next-button',
-    prevEl: '.reviews__prev-button'
-  },
 
   pagination: {
-    // Навигация
-    // Буллеты, текущее положение
-    el: '.reviews__pagination',
-    bulletClass: 'reviews__bullet',
-    bulletActiveClass: 'reviews__bullet_type_active',
-    // Буллеты
+    el: ".press__nav-wrapper",
+    bulletClass: "press__bullet",
+    bulletActiveClass: 'press__bullet_active',
     clickable: true,
-    dynamicBullets: false,
-  },
-
-  slideToClickedSlide: true,
-  // Переход по слайдам путем клика на следующий
-
-
-  simulateTouch: true,
-  // Включение / отключение перетаскивания на десктопе
-  // (также включается возможность переключиться на другой слайд по клику на него)
-
-  touchRatio: 1,
-  // Чувствительность свайпа
-
-  touchAngle: 45,
-  // Угол срабатывания свайпа
-
-  breakpoints: {
-    // Брейкпойнты для адаптива
-    1024: {
-      slidesPerView: 2,
-      slidesPerGroup: 1,
-    },
-    1440: {
-      slidesPerView: 2,
-      slidesPerGroup: 1,
-    }
   },
 });
-*/

@@ -35,6 +35,9 @@
 @import "./modules/blocks/intro/__photo/intro__photo.scss";
 @import "./modules/blocks/about/about.scss";
 @import "./modules/blocks/about/__card/about__card.scss";
+@import "./modules/blocks/about/__card/_position/about__card_position_top.scss";
+@import "./modules/blocks/about/__card/_position/about__card_position_bottom.scss";
+@import "./modules/blocks/about/__card/_position/about__card_position_middle.scss";
 @import "./modules/blocks/about/__text/about__text.scss";
 @import "./modules/blocks/about/__title/about__title.scss";
 @import "./modules/blocks/about/__list/about__list.scss";
@@ -51,13 +54,14 @@
 @import "./modules/blocks/gallery/__nav-arrow/_type/gallery__nav-arrow_type_right.scss";
 @import "./modules/blocks/press/press.scss";
 @import "./modules/blocks/press/__link/press__link.scss";
-@import "./modules/blocks/press/__block/press__block.scss";
+@import "./modules/blocks/press/__desktop-block/press__desktop-block.scss";
+@import "./modules/blocks/press/__swiper/press__swiper.scss";
+@import "./modules/blocks/press/__swiper-wrapper/press__swiper-wrapper.scss";
 @import "./modules/blocks/press/__nav-wrapper/press__nav-wrapper.scss";
-@import "./modules/blocks/press/__nav-dots/press__nav-dots.scss";
-@import "./modules/blocks/press/__dot/press__dot.scss";
-@import "./modules/blocks/press/__dot/_active/press__dot_active.scss";
 @import "./modules/blocks/press/__title/press__title.scss";
 @import "./modules/blocks/press/__text/press__text.scss";
+@import "./modules/blocks/press/__bullet/press__bullet.scss";
+@import "./modules/blocks/press/__bullet/_active/press__bullet_active.scss";
 /*стили для подвала сайта*/
 @import "./modules/blocks/footer/footer.scss";
 @import "./modules/blocks/footer/__block/footer__block.scss";
