@@ -1,0 +1,13 @@
+.header__nav-item {
+  padding-right: 20px;
+}
+
+.header__nav-item:last-of-type {
+  padding-right: 0px;
+}
+
+@media screen and (max-width: 320px) {
+  .header__nav-item {
+    padding-right: 16px;
+  }
+}

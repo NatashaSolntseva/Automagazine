@@ -1,0 +1,10 @@
+.form__input-wrapper {
+  border-top: $borderStyle;
+  border-left: $borderStyle;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__input-wrapper:last-of-type{
+  border-left: none;
+}

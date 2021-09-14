@@ -1,0 +1,11 @@
+.press {
+  display: flex;
+  min-height: 500px;
+  border-bottom: $borderStyle;
+}
+
+@media screen and (max-width: 320px) {
+  .press {
+    min-height: 286px;
+  }
+}

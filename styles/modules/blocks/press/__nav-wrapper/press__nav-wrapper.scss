@@ -1,0 +1,16 @@
+.press__nav-wrapper {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;  
+  justify-content: start;
+  align-items: center;    
+  margin-left: 50px;
+}
+
+@media screen and (max-width: 320px) {
+  .press__nav-wrapper {
+    margin-left: 20px;
+  }
+}

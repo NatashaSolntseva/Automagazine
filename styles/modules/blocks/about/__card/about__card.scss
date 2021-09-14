@@ -1,0 +1,18 @@
+.about__card {
+  border-right: $borderStyle;
+}
+
+.about__card:last-of-type {
+  border-right: none;
+}
+
+@media screen and (max-width: 486px) {
+  .about__card {
+    border-right: none;
+    border-bottom: $borderStyle;
+  }
+}
+
+.about__card:last-of-type {
+  border-bottom: none;
+}

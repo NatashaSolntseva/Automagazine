@@ -1,0 +1,18 @@
+.about__list {
+  padding-left: 50px;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 32px;
+}
+
+@media screen and (max-width: 486px) {
+  .about__list { 
+    padding: 0px 0px 6px 20px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+/*.about__list:last-of-type {
+  padding: 0px 0px 20px 20px;
+}*/

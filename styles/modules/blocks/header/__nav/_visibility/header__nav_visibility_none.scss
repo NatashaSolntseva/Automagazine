@@ -1,0 +1,9 @@
+.header__nav_visibility_none {
+  
+}
+
+@media screen and (max-width: 900px) {
+  .header__nav_visibility_none {
+    display: none;   
+  }
+}

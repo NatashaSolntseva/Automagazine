@@ -1,0 +1,12 @@
+.press__desktop-block {
+  width: 50%;
+  border-right: $borderStyle;
+  display: flex;
+  flex-direction: column;  
+}
+
+@media screen and (max-width: 768px) {
+  .press__desktop-block {
+    display: none;
+  }
+}

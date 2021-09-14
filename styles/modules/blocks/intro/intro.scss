@@ -1,0 +1,12 @@
+.intro {
+  display: grid;
+  border-bottom: $borderStyle; 
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content 1fr;  
+}
+
+@media screen and (max-width: 768px) {
+  .intro {
+    @include flex-column;
+  }
+}

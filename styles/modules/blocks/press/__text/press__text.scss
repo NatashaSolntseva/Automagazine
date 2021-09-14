@@ -1,0 +1,14 @@
+.press__text {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 42px;
+  padding: 50px 50px 0px 50px;
+}
+
+@media screen and (max-width: 320px) {
+  .press__text {
+    font-size: 16px;
+    line-height: 27px;
+    padding: 20px 20px 0px 20px;
+  }
+}
