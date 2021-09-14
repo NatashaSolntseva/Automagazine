@@ -19,3 +19,6 @@
 
 ## Ссылка на проект:
 
+[Лэндинг](https://natashasolntseva.github.io/Automagazine/)
+
+
